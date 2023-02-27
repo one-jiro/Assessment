@@ -1,0 +1,8 @@
+Other than default packages which comes with npx create-react-app I've used the following packages.
+
+styled-components library for implementing css component wise.
+axios for handling API request.
+nanoid for generating random integer for passing as key for each component.
+antd library for using its component such as Modal , Image preview.
+bootstrap css library for using its predefined class.
+
