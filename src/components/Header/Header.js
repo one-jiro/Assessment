@@ -20,13 +20,13 @@ const Header = () => {
     //             </NavHeader>
     //        </Nav>
 
-    return (<nav className="navbar navbar-dark bg-dark">
+    return (<div className="row p-1"><nav className="navbar navbar-dark bg-dark">
     <div className="container-fluid">
         <div className="d-flex input-group w-auto ">
        <div className="p-2 align-items-center">
             <Logo /> 
             <h3 style={{color:"white"}}>
-                Created By : 
+                By : 
               <small class="text-muted"> Aamir Shaikh</small>
             </h3>
            </div>
@@ -40,7 +40,8 @@ const Header = () => {
         </div>
       </div>
     </div>
-  </nav>)
+  </nav>
+  </div>)
 }
 
 

@@ -37,8 +37,8 @@ function App() {
     const observer = new IntersectionObserver((entries)=>{
       const [entry] = entries
       console.log(entry)
-      if(entry.isIntersecting){
-        setApiState("loading")
+      if(entry.isIntersecting && ((!firstLoad && apiState != "loading") || firstLoad)){
+        setApiState("loading")  
         endPointUrl({start_date:currentFilter.start_date,end_date:currentFilter.end_date}).then((res)=>{
           currentFilter.start_date = moment(res.data[0].date).subtract(6,"days").format("YYYY-MM-DD")
           currentFilter.end_date = moment(res.data[0].date).format("YYYY-MM-DD")

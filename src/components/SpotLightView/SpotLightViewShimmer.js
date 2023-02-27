@@ -12,6 +12,7 @@ const SpotLightViewShimmer = () => {
             </div>
             <div className='col-sm-12 col-md-6 col-lg-6 p-1 col-12'>
             <Skeleton />
+            <Skeleton />
             </div>
         </div>
     )
